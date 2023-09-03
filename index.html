@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissors</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-5">
+        <p>Start Game by Choosing your Weapon</p>
+        <div class="row d-flex justify-content-between">
+            <div class="col-8 card">
+                <div class="row">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <div class="pointer human mx-4"><img src="Pics/human-paper-01.png" alt=""></div>
+                        <div class="pointer human mx-4"><img src="Pics/human-rock-01.png" alt=""></div>
+                        <div class="pointer human mx-4"><img src="Pics/human-scissors-01.png" alt=""></div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="pointer robot d-none mx-4"><img src="Pics/robot-paper-01.png" alt=""></div>
+                        <div class="pointer robot d-none mx-4"><img src="Pics/robot-rock-01.png" alt=""></div>
+                        <div class="pointer robot d-none mx-4"><img src="Pics/robot-scissors-01.png" alt=""></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center ">
+                    <h2 id="output" class="fw-bolder">Can you win ?</h2>
+                </div>
+            </div>
+            <div class="col-3 mx-2 card ">
+                <div class="pt-4">
+                    <h3>Scores </h3>
+                    <hr>
+                    <h6>User Points : <span id="humanPoint"></span></h6>
+                    <br>
+                    <h6>CPU Points :<span id="robotPoint"></span></h6>
+                    <hr>
+                    <button id="btn" class="btn btn-dark">Rematch</button>
+                    <br><br>
+                    <p>NOTICE : You Can Rematch by Pressing <b class="text-danger">R</b> Key on your Keyboard .</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="fontawesome.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
